@@ -1,5 +1,6 @@
 import Categorycard from '@/components/Categorycard'
 import Categorymenu from '@/components/Categorymenu'
+import Link from 'next/link'
 import React from 'react'
 import {AiOutlineSetting,AiOutlineSearch} from 'react-icons/ai'
 import {MdOutlineAddLink} from 'react-icons/md'
@@ -11,15 +12,19 @@ export default function page() {
       <Categorymenu/>
       <div className='categorybody mt-2'>
         <Categorycard/>
+        <div className="link-options">
+        <div>Pop Up</div>
+      </div>
       </div>
       <div className='footer-menu align-bottom flex justify-between'>
         <div className='leftFooter flex gap-4'>
         <AiOutlineSetting className='text-3xl'/>
-        <AiOutlineSearch className='text-3xl'/>
+        <AiOutlineSearch className='searchIcon  text-2xl'/>
+        <input type="text" placeholder='Find' />
         </div>
-        <MdOutlineAddLink className='text-3xl'/>
-
+        <Link href={'http://localhost:3000/create'}><MdOutlineAddLink className='text-3xl'/></Link>
       </div>
+      
     </div>
   )
 }

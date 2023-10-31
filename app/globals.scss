@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import './styles/create';
 body{
   background-color: black;
   width: 100vw;
@@ -11,7 +11,6 @@ body{
     width:40%;
     height: 100%;
     margin: 0 auto;
-    // padding: .7rem ;
     overflow-y: hidden;
     background-color: rgba(255, 255, 255, 0.834);
     @media(max-width: 968px){
@@ -30,7 +29,6 @@ body{
       }
       .homeIcon{
         border: 1px solid black;
-        
       }
     }
     .categorybody{
@@ -42,15 +40,45 @@ body{
       }
       .Categorycard{
         .card{
+          align-items: center;
           border: 1px solid black;
 
         }
       }
     }
     .footer-menu{
-      background-color: rgba(128, 0, 128, 0.312);
+      background-color: rgba(132, 104, 132, 0.312);
       color: white;
       padding: 1rem;
+      width: 100%;
+      .leftFooter{
+        position: relative;
+        .searchIcon{
+          font-size: 2rem;
+          color: black;
+          position: absolute;
+          left: 3.4rem;
+          
+          @media(max-width: 968px){
+            font-size: 1.5rem;
+            top: .3rem;
+          }
+        }
+        input{
+          padding: 0 2rem;
+          width: auto;
+          border: none;
+          background-color: #BBB3BB;
+          border-bottom: 1px solid rgb(8, 5, 5);
+          @media(max-width: 968px){
+            width: 170px;
+          }
+        }
+      }
+      
+      .form{
+        width: 70%;
+      }
     }
   }
 }
