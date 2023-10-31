@@ -10,7 +10,7 @@ export default function page() {
     <div className='container  '>
       <h1 className='text-center text-3xl b-700 py-3'>Link Keeper</h1>
       <Categorymenu/>
-      <div className='categorybody mt-2'>
+      <div className='categorybody '>
         <Categorycard/>
         <div className="link-options">
         <div>Pop Up</div>
