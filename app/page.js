@@ -16,7 +16,7 @@ export default function page() {
         <div>Pop Up</div>
       </div>
       </div>
-      <div className='footer-menu align-bottom flex justify-between'>
+      <div className='footer-menu align-bottom flex justify-between mt-2'>
         <div className='leftFooter flex gap-4'>
         <AiOutlineSetting className='text-3xl'/>
         <AiOutlineSearch className='searchIcon  text-2xl'/>
