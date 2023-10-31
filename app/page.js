@@ -22,7 +22,7 @@ export default function page() {
         <AiOutlineSearch className='searchIcon  text-2xl'/>
         <input type="text" placeholder='Find' />
         </div>
-        <Link href={'http://localhost:3000/create'}><MdOutlineAddLink className='text-3xl'/></Link>
+        <Link href={'./create'}><MdOutlineAddLink className='text-3xl'/></Link>
       </div>
       
     </div>
